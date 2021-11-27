@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="mypane" maxHeight="Infinity" maxWidth="Infinity" minHeight="400.0" minWidth="360.0" scaleShape="false" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.baseconvertor.BaseController">
+   <children>
+      <ChoiceBox fx:id="fchoice" layoutX="125.0" layoutY="76.0" prefHeight="26.0" prefWidth="170.0" scaleShape="false" />
+      <Label fx:id="flabel" layoutX="57.0" layoutY="76.0" prefHeight="26.0" prefWidth="58.0" scaleShape="false" text="From" textFill="RED">
+         <font>
+            <Font name="FreeMono Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ftext" layoutX="125.0" layoutY="123.0" scaleShape="false" />
+      <Label fx:id="tlabel" layoutX="57.0" layoutY="171.0" text="To" textFill="RED">
+         <font>
+            <Font name="FreeMono Bold" size="19.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="rchoice" layoutX="125.0" layoutY="168.0" prefHeight="26.0" prefWidth="170.0" />
+      <TextField fx:id="rtext" editable="false" layoutX="125.0" layoutY="217.0" />
+      <Button fx:id="rbutton" layoutX="125.0" layoutY="262.0" mnemonicParsing="false" onAction="#convert" scaleShape="false" text="Convert" />
+      <Button fx:id="cbutton" layoutX="223.0" layoutY="262.0" mnemonicParsing="false" onAction="#rset" scaleShape="false" text="Reset" textFill="RED" />
+      <Label fx:id="rlabel" layoutX="54.0" layoutY="317.0" prefHeight="44.0" prefWidth="246.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label graphicTextGap="5.0" layoutX="32.0" layoutY="25.0" prefHeight="23.0" prefWidth="294.0" text="Welcome Base Convertor" textFill="#2100ff" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="FreeMono Bold" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</Pane>
